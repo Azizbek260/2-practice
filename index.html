@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>1-Amaliyot</title>
+    <title>2-Amaliyot</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -18,36 +18,32 @@
 
                 <form class="site-header__search-form" action="https://echo.htmlacademy.ru">
                     <div class="site-header__search-form-wrapper">
-                        <select  class="site-header__search-form-select">
+                        <select  class="site-header__search-form-select form-element">
                             <option value="">Barcha operatorlar</option>
                             <option value="Uzmobile">Uzmobile</option>
                             <option value="Ucell">Ucell</option>
                             <option value="Beeline">Beeline</option>
                         </select>
                         <search>
-                            <input class="site-header__search-form-input" type="search" placeholder="Xizmatlar bo'yicha izlash">
+                            <input class="site-header__search-form-input form-element" type="search" placeholder="Xizmatlar bo'yicha izlash">
                         </search>
-
                     </div>
                 </form>
 
-                <div class="site-header__end-wrapper">
-                    <form  class="site-header__user-form" action="https://echo.htmlacademy.ru">
-                        <select class="site-header__user-form-select">
+                <form  class="site-header__user-form" action="https://echo.htmlacademy.ru">
+                    <div class="site-header__end-wrapper">
+                        <select class="site-header__user-form-select form-element">
                             <option value="">Operatorlar</option>
                             <option value="Uzmobile">Uzmobile</option>
                             <option value="Ucell">Ucell</option>
                             <option value="Beeline">Beeline</option>
                         </select>
 
-                        <select class="site-header__user-form-select">
+                        <select class="site-header__user-form-select form-element">
                             <option value="">Shahsiy kabinet</option>
                         </select>
-                    </form>
-                </div>
-
-
-
+                    </div>
+                </form>
             </div>
         </div>
     </header>
@@ -56,7 +52,7 @@
     <!-- ADVERTISMENT START -->
 
     <aside class="advertisment">
-        <div>
+        <div class="container">
             <ul class="advertisment__list">
                 <li class="advertisment__item">
                     <a class="advertisment__link" href="https://uztelecom.uz">
@@ -92,49 +88,65 @@
         </div>
     </aside>
 
-        <!-- ADVERTISMENT END -->
-
-    <aside class="advertisment_2">
-        <div class="container_2">
-            <h2>Beeline</h2>
-            <a href="https://beeline.uz" target="_blank">beeline.uz</a>
+    
+    <aside class="adv">
+        <div class="container">
+            <h2 class="adv__title">Beeline</h2>
+            <a class="adv__link" href="https://www.beeline.uz" target="_blank">www.beeline.uz</a>
         </div>
     </aside>
+    
+    <!-- ADVERTISMENT END -->
+
 
     <!-- MAIN START -->
 
     <main class="site-main">
-        <div class="container_3">
-            <section class="site-main__section_1">
-                <h2 class="site-main_h2">Aloqa operatori xizmatlari</h2>
-                <ul class="main-list">
-                    <li class="main-item">
-                      <img class="site-main__img" src="./images/earth-globe.svg" width="58" height="58" alt="Globe">
-                      <h3>Internet</h3>
+
+        <!-- OPERATORS START -->
+
+        <section class="operators">
+            <div class="container">
+                <h2 class="operators__title">
+                    Aloqa operatori xizmatlari
+                </h2>
+
+                <ul class="operators__list">
+                    <li class="operators__item">
+                      <img class="operators__item-img" src="./images/earth-globe.svg" width="58" height="58" alt="Globe">
+
+                      <h3 class="operators__item-title">Internet</h3>
                     </li>
-                    <li class="main-item">
-                        <img class="site-main__img" src="./images/binary-code.svg" width="50" height="58" alt="Globe">
-                        <h3>USSD kodlar</h3>
-                      </li>
-                      <li class="main-item">
-                        <img class="site-main__img" src="./images/Sim.svg" width="41" height="58" alt="Globe">
-                        <h3>Tariflar</h3>
-                      </li>
-                      <li class="main-item">
-                        <img class="site-main__img" src="./images/package.svg" width="53" height="58" alt="Globe">
-                        <h3>Xizmatlar</h3>
-                      </li>
-                      <li class="main-item">
-                        <img class="site-main__img" src="./images/clock.svg" width="59" height="59" alt="Globe">
-                        <h3>Daqiqalar</h3>
-                      </li>
-                      <li class="main-item">
-                        <img class="site-main__img" src="./images/speech-bubble.svg" width="63" height="56" alt="Globe">
-                        <h3>SMS</h3>
-                      </li>
+                    <li class="operators__item">
+                        <img class="operators__item-img" src="./images/binary-code.svg" width="50" height="58" alt="Globe">
+
+                        <h3 class="operators__item-title">USSD kodlar</h3>
+                    </li>
+                    <li class="operators__item">
+                        <img class="operators__item-img" src="./images/Sim.svg" width="41" height="58" alt="Globe">
+
+                        <h3 class="operators__item-title">Tariflar</h3>
+                    </li>
+                    <li class="operators__item">
+                        <img class="operators__item-img" src="./images/package.svg" width="53" height="58" alt="Globe">
+
+                        <h3 class="operators__item-title">Xizmatlar</h3>
+                    </li>
+                    <li class="operators__item">
+                        <img class="operators__item-img" src="./images/clock.svg" width="59" height="59" alt="Globe">
+
+                        <h3 class="operators__item-title">Daqiqalar</h3>
+                    </li>
+                    <li class="operators__item">
+                        <img class="operators__item-img" src="./images/speech-bubble.svg" width="63" height="56" alt="Globe">
+
+                        <h3 class="operators__item-title">SMS</h3>
+                    </li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <!-- OPERATORS END -->
 
         <!-- SECTION NEWS -->
 
